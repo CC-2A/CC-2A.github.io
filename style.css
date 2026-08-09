@@ -2555,3 +2555,102 @@ p:last-child {
     display: none;
   }
 }
+
+
+/* Rapports techniques anonymisés — preuves réelles de recherche de fuite */
+.report-proof-section{
+  background:
+    radial-gradient(circle at 12% 12%,rgba(207,164,58,.10),transparent 34%),
+    linear-gradient(180deg,#f7f8fa 0%,#eef1f5 100%);
+  border-top:1px solid rgba(15,23,42,.08);
+  border-bottom:1px solid rgba(15,23,42,.08);
+}
+.report-privacy-notice{
+  margin:0 0 26px;
+  padding:13px 16px;
+  border:1px solid rgba(207,164,58,.32);
+  border-left:4px solid #cfa43a;
+  border-radius:10px;
+  background:rgba(255,255,255,.78);
+  color:#475569;
+  font-size:.92rem;
+}
+.report-proof-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px;
+  align-items:stretch;
+}
+.report-preview-card{
+  margin:0;
+  overflow:hidden;
+  border:1px solid rgba(15,23,42,.10);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 18px 48px rgba(15,23,42,.10);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.report-preview-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 22px 56px rgba(15,23,42,.14);
+}
+.report-preview-frame{
+  display:flex;
+  height:540px;
+  padding:20px;
+  align-items:flex-start;
+  justify-content:center;
+  overflow:hidden;
+  background:linear-gradient(145deg,#dfe4ea,#f3f5f8);
+}
+.report-preview-frame img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:top center;
+  background:#fff;
+  box-shadow:0 8px 25px rgba(15,23,42,.14);
+}
+.report-preview-caption{
+  padding:22px 24px 24px;
+}
+.report-preview-caption strong{
+  display:block;
+  margin:9px 0 8px;
+  color:#101827;
+  font-size:1.18rem;
+}
+.report-preview-caption p{
+  margin:0 0 14px;
+  color:#5b6573;
+}
+.report-preview-caption a{
+  color:#8b6815;
+  font-weight:800;
+  text-decoration:none;
+}
+.report-preview-caption a:hover{
+  text-decoration:underline;
+}
+.report-preview-label{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#fff0ec;
+  color:#a33b24;
+  font-size:.75rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.report-preview-label-stable{
+  background:#e8f5ee;
+  color:#1f7048;
+}
+@media (max-width:760px){
+  .report-proof-grid{grid-template-columns:1fr;gap:20px}
+  .report-preview-frame{height:430px;padding:13px}
+  .report-preview-caption{padding:18px}
+  .report-preview-card:hover{transform:none}
+}
