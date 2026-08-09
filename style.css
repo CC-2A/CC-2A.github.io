@@ -2101,3 +2101,210 @@ p:last-child {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Preuves instrumentées - recherche de fuite */
+.pressure-proof-section {
+  background: linear-gradient(180deg, var(--ivory-100), #ffffff);
+}
+
+.pressure-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.pressure-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.pressure-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--border);
+  background: #f7f9fb;
+}
+
+.pressure-card figcaption {
+  padding: 24px;
+}
+
+.pressure-card figcaption strong,
+.pressure-card figcaption p {
+  display: block;
+}
+
+.pressure-card figcaption strong {
+  margin: 12px 0 8px;
+  color: var(--navy-900);
+  font-size: 1.14rem;
+}
+
+.pressure-card figcaption p {
+  margin: 0;
+  color: var(--slate-700);
+  font-size: 0.86rem;
+}
+
+.pressure-status {
+  display: inline-flex;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pressure-card-alert .pressure-status {
+  background: #fee9e7;
+  color: #a82d23;
+}
+
+.pressure-card-stable .pressure-status {
+  background: #e6f5eb;
+  color: #146b3a;
+}
+
+.pressure-explanation {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 34px;
+  align-items: stretch;
+  margin-top: 34px;
+}
+
+.pressure-explanation h3 {
+  margin-bottom: 22px;
+  color: var(--navy-900);
+  font-size: clamp(1.7rem, 3vw, 2.45rem);
+}
+
+.expert-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  border: 1px solid rgba(242, 193, 78, 0.28);
+  border-radius: var(--radius-md);
+  background: var(--navy-900);
+  color: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.expert-note span {
+  color: var(--gold-500);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.expert-note strong {
+  margin: 14px 0;
+  font-size: 1.28rem;
+  line-height: 1.35;
+}
+
+.expert-note p {
+  color: #d5dee8;
+}
+
+.expert-note small {
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.14);
+  color: #aebdcd;
+  line-height: 1.55;
+}
+
+.case-study-section {
+  background: var(--navy-950);
+  color: var(--white);
+}
+
+.case-study-section .section-label {
+  color: var(--gold-500);
+}
+
+.case-study-section .section-head > p:not(.section-label) {
+  color: #bfcbd8;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.case-study-card {
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.05);
+}
+
+.case-study-card > span {
+  color: var(--gold-500);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-study-card h3 {
+  margin: 16px 0 12px;
+  color: var(--white);
+  font-size: 1.28rem;
+}
+
+.case-study-card p {
+  color: #c7d2de;
+  font-size: 0.88rem;
+}
+
+.case-study-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.case-study-card li {
+  padding: 7px 9px;
+  border: 1px solid rgba(242,193,78,0.24);
+  border-radius: 999px;
+  color: #f3d788;
+  font-size: 0.7rem;
+  font-weight: 750;
+}
+
+@media (max-width: 920px) {
+  .pressure-chart-grid,
+  .pressure-explanation {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pressure-card figcaption,
+  .case-study-card,
+  .expert-note {
+    padding: 22px;
+  }
+}
