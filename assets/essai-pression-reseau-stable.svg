@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Essai de pression sur réseau stable</title>
+<desc id="desc">Après stabilisation la pression varie seulement de 6,17 à 6,10 bar pendant 11 minutes 56.</desc>
+<rect width="1200" height="760" fill="#f7f9fb"/>
+<rect x="0" y="0" width="1200" height="104" fill="#071426"/>
+<text x="60" y="46" fill="#f2c14e" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="2">CC-2A • TEST D'ÉTANCHÉITÉ</text>
+<text x="60" y="78" fill="#ffffff" font-family="Arial,sans-serif" font-size="28" font-weight="700">Réseau stable après stabilisation</text>
+<g transform="translate(118,150)">
+<rect width="990" height="430" rx="8" fill="#ffffff" stroke="#d6dee7" stroke-width="2"/>
+<g stroke="#dce3ea" stroke-width="1"><path d="M0 86H990M0 172H990M0 258H990M0 344H990"/><path d="M198 0V430M396 0V430M594 0V430M792 0V430"/></g>
+<g fill="#5b6b7c" font-family="Arial,sans-serif" font-size="17"><text x="-58" y="8">7 bar</text><text x="-58" y="94">6 bar</text><text x="-58" y="180">5 bar</text><text x="-58" y="266">4 bar</text><text x="-58" y="352">3 bar</text><text x="-58" y="438">2 bar</text><text x="180" y="466">03:00</text><text x="380" y="466">06:00</text><text x="578" y="466">09:00</text><text x="910" y="466">11:56</text></g>
+<path d="M0 72 C100 73 190 74 285 75 C380 76 480 76 580 77 C680 78 775 79 870 80 C920 80 958 81 990 81" fill="none" stroke="#198754" stroke-width="8" stroke-linecap="round"/>
+<path d="M0 72 C100 73 190 74 285 75 C380 76 480 76 580 77 C680 78 775 79 870 80 C920 80 958 81 990 81 L990 430 L0 430Z" fill="#198754" opacity=".10"/>
+<circle cx="0" cy="72" r="9" fill="#198754"/><circle cx="990" cy="81" r="9" fill="#198754"/>
+</g>
+<g font-family="Arial,sans-serif"><rect x="118" y="642" width="296" height="66" rx="12" fill="#e6f5eb"/><text x="142" y="670" fill="#146b3a" font-size="17" font-weight="700">PRESSION</text><text x="142" y="696" fill="#071426" font-size="23" font-weight="700">6,17 → 6,10 bar</text><rect x="446" y="642" width="284" height="66" rx="12" fill="#fff4d6"/><text x="470" y="670" fill="#8b6500" font-size="17" font-weight="700">DURÉE</text><text x="470" y="696" fill="#071426" font-size="23" font-weight="700">11 min 56</text><rect x="762" y="642" width="346" height="66" rx="12" fill="#eef2f6"/><text x="786" y="670" fill="#5b6b7c" font-size="17" font-weight="700">TEMPÉRATURE</text><text x="786" y="696" fill="#071426" font-size="23" font-weight="700">19,03 → 18,96 °C</text></g>
+</svg>
