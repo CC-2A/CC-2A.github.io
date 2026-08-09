@@ -2548,3 +2548,10 @@ p:last-child {
     display: none;
   }
 }
+
+
+@media (max-width: 720px) {
+  .header-call {
+    display: none;
+  }
+}
