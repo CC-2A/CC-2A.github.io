@@ -2654,3 +2654,19 @@ p:last-child {
   .report-preview-caption{padding:18px}
   .report-preview-card:hover{transform:none}
 }
+
+
+/* Recherche de fuite : méthodes et équipements */
+.home-hero .text-link,
+.home-hero .text-link span { color: var(--gold-400); }
+.leak-equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.leak-equipment-grid .tool-icon { margin-bottom: 18px; }
+.leak-equipment-grid .tool-card p:last-child { margin-bottom: 0; }
+.equipment-followup { max-width: 80ch; margin: 28px 0 0; }
+@media (max-width: 700px) {
+  .leak-equipment-grid { grid-template-columns: 1fr; }
+}
