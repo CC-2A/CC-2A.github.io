@@ -2670,3 +2670,30 @@ p:last-child {
 @media (max-width: 700px) {
   .leak-equipment-grid { grid-template-columns: 1fr; }
 }
+
+/* Retours de terrain et avis récent — octobre 2026 */
+.recent-cases-section { background: var(--ivory-100); }
+.recent-cases-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.recent-case { min-width: 0; padding: 30px; background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold-500); border-radius: var(--radius-md); }
+.recent-case h3 { margin: 12px 0 24px; font-size: 1.45rem; line-height: 1.25; }
+.recent-case dl { margin: 0; }
+.recent-case dt { margin: 20px 0 6px; font-weight: 800; color: var(--navy-900); }
+.recent-case dd { margin: 0; color: var(--slate-700); }
+.recent-cases-section .btn { margin-top: 22px; }
+.report-deliverables { margin-bottom: 28px; padding: 28px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); }
+.report-deliverables h3 { font-size: 1.4rem; }
+.report-deliverables p { margin: 22px 0 0; color: var(--slate-700); }
+.recent-review { display: grid; grid-template-columns: minmax(0,1.6fr) minmax(0,1fr); gap: 32px; align-items: center; padding: 32px; margin: 0 0 24px; background: var(--navy-900); color: var(--white); border: 1px solid var(--gold-500); border-radius: var(--radius-md); }
+.recent-review .section-label { color: var(--gold-400); }
+.recent-review h3 { color: var(--white); font-size: clamp(1.45rem,3vw,2rem); line-height: 1.2; margin: 16px 0; }
+.recent-review p { color: #d5dee8; }
+.recent-review .review-source { margin-bottom: 0; font-size: .8rem; color: #bfcbd8; }
+.recent-review-author { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; min-width: 0; }
+.recent-review-author strong { font-size: 1.18rem; }
+.recent-review-author span { color: #d5dee8; }
+.recent-review .text-link { color: var(--gold-400); }
+@media (max-width: 760px) {
+  .recent-cases-grid, .recent-review { grid-template-columns: 1fr; }
+  .recent-case, .report-deliverables, .recent-review { padding: 22px; }
+  .recent-review { gap: 24px; }
+}
